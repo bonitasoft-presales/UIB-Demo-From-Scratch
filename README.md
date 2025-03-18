@@ -25,4 +25,4 @@ This repository contains two application exports:
 
 ## How to Use
 
-A full guide on how to create a Web Application with UI Builder, and how to use this files is available in this Youtube tutorial
+A full guide on how to create a Web Application with UI Builder, and how to use this files is available in this [Youtube tutorial](https://youtu.be/_eriagdkIpM?si=CHomBfqhyCzliy7B)
