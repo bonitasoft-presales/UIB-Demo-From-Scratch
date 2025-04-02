@@ -1,6 +1,8 @@
 name: demo-uib
 services:
+  #A Bonita Project SCA image 
   bonita:
+    #Modify with your packaged Bonita BPA Application docker image
     image: demo-from-scratch-production:0.0.1
     hostname: bonita
     volumes:
@@ -22,12 +24,15 @@ services:
       - BIZ_DB_PASS=bpm
     depends_on:
       bonita-db:
-        condition:
-          service_healthy
+        condition: service_healthy
+  
+  # A preconfigured postgres bonita database
   bonita-db:
     image: bonitasoft/bonita-postgres:latest
     ports:
       - 5432:5432
+  
+  #The Bonita UIB docker image created
   bonita-uib:
     image: demo-uib:1.0.0
     container_name: bonita-ui-builder
@@ -36,13 +41,15 @@ services:
       BONITA_DEV_MODE: false
     ports:
       - "8090:80"
-
+    # Make sure that you don't have any volumes asssociated with this container
+    #volumes:
+    #  - ./stacks:/appsmith-stacks
 
   # A reverse proxy used to communicate between Bonita UI Builder and a Bonita Runtime
   bonita-ui-proxy:
-    #image: bonitasoft.jfrog.io/docker/bonita-ui-proxy:1.2.0
-    #Image for internal usage
-    image: bonitasoft.jfrog.io/docker-releases/bonita-ui-proxy:1.2.0
+    image: bonitasoft.jfrog.io/docker/bonita-ui-proxy:1.2.0
+    #Path for Bonita Internal Tokens
+    #image: bonitasoft.jfrog.io/docker-releases/bonita-ui-proxy:1.2.0
     ports:
       - 443:443
       - 80:80

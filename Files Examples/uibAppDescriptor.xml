@@ -2,6 +2,7 @@
 <applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.1">
     <applicationLink token="demo-from-scratch" version="1.0" profile="User" state="ACTIVATED">
         <displayName>Demo from Scratch (UIB)</displayName>
-        <iconPath>demo.png</iconPath>
+        <!-- Adding an favicon to the app (limited to 200x200px)
+        <iconPath>demo.png</iconPath> -->
     </applicationLink>
 </applications>

@@ -23,6 +23,17 @@ This repository contains two application exports:
 2. **demo-from-scratch (Full).json**  
    - This file contains the full version of the example application, including all configured widgets, which serves as a comprehensive starting point for your Bonita UIB project.
 
+You can also find some file examples in this repository:
+
+1. **docker-compose.yml**
+   - Example of a full production ready docker compose, with a Bonita BPA Application (docker image), the Bonita UI Proxy, the Bonita UI Builder app (with the developed application) and a database
+
+2. **Dockerfile**
+   - Example of the dockerfile to create the UI Builder docker image including the developed end user applications. It can be run as-is, without requirements of changing. For more information, check the documentation on [How to package your UI Builder application](https://documentation.bonitasoft.com/bonita/latest/applications/ui-builder/production-packaging).
+
+3. **uibAppDescriptor.xml**
+   - Example of the Application Descriptor to declare the UIB interface within the BPA Project. For more information, you can check the documentation on [How to declare your interface into Bonita](https://documentation.bonitasoft.com/bonita/latest/applications/ui-builder/builder-declare-interface-in-bonita)
+
 ## How to Use
 
-A full guide on how to create a Web Application with UI Builder, and how to use this files is available in this [Youtube tutorial](https://youtu.be/_eriagdkIpM?si=CHomBfqhyCzliy7B)
+A full guide on how to create a Web Application with UI Builder, and how to use this files is available in this [Youtube tutorial](https://youtu.be/_eriagdkIpM?si=CHomBfqhyCzliy7B). You can also find a full guide on how to deploy the UI Builder application in this [Youtube tutorial]()

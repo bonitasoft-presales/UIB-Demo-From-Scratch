@@ -1,8 +1,8 @@
 ARG VERSION=1.2.0
 #Use this repository for an standard costumer token
-#ARG BASE=bonitasoft.jfrog.io/docker/bonita-ui-builder
+ARG BASE=bonitasoft.jfrog.io/docker/bonita-ui-builder
 #Use this repository for an internal Bonita token
-ARG BASE=bonitasoft.jfrog.io/docker-release/bonita-ui-builder
+#ARG BASE=bonitasoft.jfrog.io/docker-release/bonita-ui-builder
 
 FROM ${BASE}:${VERSION}
 
