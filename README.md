@@ -36,4 +36,4 @@ You can also find some file examples in this repository:
 
 ## How to Use
 
-A full guide on how to create a Web Application with UI Builder, and how to use this files is available in this [Youtube tutorial](https://youtu.be/_eriagdkIpM?si=CHomBfqhyCzliy7B). You can also find a full guide on how to deploy the UI Builder application in this [Youtube tutorial]()
+A full guide on how to create a Web Application with UI Builder, and how to use this files is available in this [Youtube tutorial](https://youtu.be/_eriagdkIpM?si=CHomBfqhyCzliy7B). You can also find a full guide on how to deploy the UI Builder application in this [Youtube tutorial](https://youtu.be/7RYBl_DwEDc)
